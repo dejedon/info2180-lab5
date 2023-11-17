@@ -15,8 +15,8 @@ window.onload = function(){
                 var cntry = rqst.responseText;
                 var result = document.getElementById("result");
                 result.innerHTML = cntry;
-                }
-                else{
+                
+                }else{
                     alert("Something went wrong");
                 }
             }
@@ -25,7 +25,7 @@ window.onload = function(){
         rqst.send();
     });
 
-    /* lookupcities.addEventListener("click", (e)=>{
+    lookupcities.addEventListener("click", (e)=>{
         e.preventDefault();
         console.log("click");
         var qry = document.getElementById("country").value;
@@ -44,14 +44,9 @@ window.onload = function(){
                 }
             }
         }
+
         rqst.open("GET", url, true);
         rqst.send();
-    
-    }); */
-    
+    });
+
 }
-
-
-
-
-    

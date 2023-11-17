@@ -12,15 +12,21 @@
 	</head>
 
 	<body>
+		
 		<header>
-			<h1>World Database Lookup</h1>
+			<div id='world image'>
+				<img src='globe.png' alt="Image of the World Globe">
+				<h1>World Database Lookup</h1>
+			</div>
 		</header>
 
 		<main>
 			<div id="controls">
-				<label for="country">Country:</label>
 				<input id="country" type="search" name="country" placeholder="Enter country name" />
+			</div>
+			<div class="btn"> 	
 				<button id="lookup">Lookup</button>
+				<button id="cities">Lookup Cities</button>
 			</div>
 			
 			<div id="result">
@@ -29,4 +35,5 @@
 		</main>
 
 	</body>
+
 </html>
